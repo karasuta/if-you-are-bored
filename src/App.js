@@ -8,7 +8,7 @@ useEffect(()=>{
 
   const[tip, setTip]=useState('');
   const newTip = async ()=>{
-    const responce = await fetch ("http://www.boredapi.com/api/activity/");
+    const responce = await fetch ("https://www.boredapi.com/api/activity/");
     const data = await responce.json();
     setTip(data.activity);
 }
